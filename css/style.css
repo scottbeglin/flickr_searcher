@@ -1,0 +1,69 @@
+/* CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* General styles
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li)) */
+
+body {
+    background: #564006;
+    color: white;
+    text-align: center;
+}
+
+/* Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.introSearch {
+    margin: 5rem auto;
+    font-size: 35px;
+}
+
+/* Content styles
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+input {
+    padding: .5rem;
+}
+.glyphicon-refresh {
+    font-size: 32px;
+}
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+@-webkit-keyframes spinw {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinm {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
